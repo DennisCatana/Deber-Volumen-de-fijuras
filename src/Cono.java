@@ -108,5 +108,15 @@ public class Cono {
         Area_Cono_Lateral = Math.PI * Radio_Cono * Generatriz; //pi * r * g
         Area_Cono_Total = Area_Cono_Base + Area_Cono_Lateral; // Area Lateral + Area Base
     }
+
+    public void imprimirValores() {
+        System.out.println("\n\nRadio del Cono: " + Radio_Cono);
+        System.out.println("Altura del Cono: " + Altura_Cono);
+        System.out.println("Volumen del Cono: " + Volumen_Cono);
+        System.out.println("Generatriz: " + Generatriz);
+        System.out.println("Area Lateral del Cono: " + Area_Cono_Lateral);
+        System.out.println("Area Base del Cono: " + Area_Cono_Base);
+        System.out.println("Area Total del Cono: " + Area_Cono_Total);
+    }
 //********************************************************************************************************************//
 }
