@@ -9,23 +9,13 @@ public class Menu {
             opcion=MenuPrincipal();
 
             switch (opcion) {
-                case 1:
-                    System.out.println("\nHa seleccionado la opción 1");
-                    break;
-                case 2:
-                    System.out.println("\nHa seleccionado la opción 2");
-                    break;
-                case 3:
-                    System.out.println("\nHa seleccionado la opción 3");
-                    break;
-                case 4:
-                    System.out.println("\nHa seleccionado la opción 4");
-                    break;
-                case 5:
-                    System.out.println("Saliendo del programa...");
-                    break;
-                default:
-
+                case 1 -> System.out.println("\nHa seleccionado la opción 1");
+                case 2 -> System.out.println("\nHa seleccionado la opción 2");
+                case 3 -> System.out.println("\nHa seleccionado la opción 3");
+                case 4 -> System.out.println("\nHa seleccionado la opción 4");
+                case 5 -> System.out.println("Saliendo del programa...");
+                default -> {
+                }
             }
         }
     }
