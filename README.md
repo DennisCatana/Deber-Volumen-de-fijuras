@@ -1,6 +1,6 @@
 # Deber sobrecarga de métodos y atributos de privacidad.
 
-## __Integrantes:__
+# __Integrantes:__
 - CATAÑA PILATASIG DENNIS JOEL
 - FALCONI MARCILLO JUAN PABLO
 - MIÑO OCHOA MATEO RAFAEL
