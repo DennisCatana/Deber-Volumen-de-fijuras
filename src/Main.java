@@ -22,12 +22,24 @@ public class Main {
                     } while (op == 1);
                     break;
                 case 2:
+
                     break;
                 case 3:
 
                     break;
                 case 4:
-
+                    do {
+                        System.out.println("Área y Volumen del Cubo");
+                        Cubo cubo = new Cubo(0);
+                        float lado = (float) obtenerDatosCubo(scanner, "\nIngrese el valor del lado del cubo: ");
+                        double volumen = cubo.calcularVolumen(lado);
+                        double area = cubo.calcularArea(lado);
+                        cubo.volumenCubo = volumen;
+                        cubo.areaCubo = area;
+                        cubo.imprimirValores();
+                        System.out.print("\n\nDesea continuar en esta sección 1.Si - 2.No: ");
+                        op = scanner.nextInt();
+                    } while (op == 1);
                     break;
                 case 5:
                     System.out.println("Saliendo del programa...");
@@ -59,6 +71,11 @@ public class Main {
     }
 
     public static double obtenerDatosCono(Scanner scanner, String mensaje) {
+        System.out.print(mensaje);
+        return scanner.nextDouble();
+    }
+
+    public static double obtenerDatosCubo(Scanner scanner, String mensaje) {
         System.out.print(mensaje);
         return scanner.nextDouble();
     }
