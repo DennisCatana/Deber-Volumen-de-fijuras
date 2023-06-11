@@ -21,9 +21,11 @@ public class Cubos {
 
     //Sobrecarga de Metodos
     public double cubo(double lado){ //Calculo del area del cubo
-        return 6*this.lado*this.lado;
+        System.out.println(6*this.lado*this.lado);
+        return 0;
     }
     public double cubo(){ //Calculo del volumen del cubo
-        return Math.pow(this.lado, 3);
+        System.out.println(Math.pow(this.lado, 3));
+        return 0;
     }
 }
