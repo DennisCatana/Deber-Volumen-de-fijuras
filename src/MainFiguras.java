@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class MainFiguras {
     static Scanner scanner = new Scanner(System.in);
     static int opcion = 0, op = 0;
 
@@ -25,7 +25,17 @@ public class Main {
 
                     break;
                 case 3:
-
+                    do {
+                        System.out.println("Área y Volumen del Cilindro");
+                        Cilindro cilindro = new Cilindro(0, 0);
+                        float radio = (float) obtenerDatosCilindro(scanner, "\n\nIngrese el radio del cilindro: ");
+                        float altura = (float) obtenerDatosCilindro(scanner, "Ingrese la altura del cilindro: ");
+                        cilindro.setRadio(radio);
+                        cilindro.setAltura(altura);
+                        cilindro.imprimirValores();
+                        System.out.print("\n\nDesea continuar en esta sección 1.Si - 2.No: ");
+                        op = scanner.nextInt();
+                    } while (op == 1);
                     break;
                 case 4:
                     do {
@@ -76,6 +86,11 @@ public class Main {
     }
 
     public static double obtenerDatosCubo(Scanner scanner, String mensaje) {
+        System.out.print(mensaje);
+        return scanner.nextDouble();
+    }
+
+    public static double obtenerDatosCilindro(Scanner scanner, String mensaje) {
         System.out.print(mensaje);
         return scanner.nextDouble();
     }

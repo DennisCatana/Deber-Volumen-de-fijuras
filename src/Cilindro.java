@@ -35,5 +35,8 @@ public class Cilindro {
     public  double areaCilidro(double radio, double altura){
         return (2 * Math.PI * this.radio * this.altura) + (2 * Math.PI * Math.pow(this.radio, 2));
     }
-
+    public void imprimirValores() {
+        System.out.println("Volumen del Cilindro " + volumenCindro(radio, altura));
+        System.out.println("Area Total del Cilindro: " + areaCilidro(radio, altura));
+    }
 }
