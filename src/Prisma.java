@@ -50,6 +50,6 @@ public class Prisma {
 
     public void imprimirValores() {
         System.out.println("Volumen del Prisma " + String.format("%.2f",volumenPrisma(A_base, h)));
-        System.out.println("Area Total del Cilindro: " + String.format("%.2f",areaPrisma(A_base, Pb, h)));
+        System.out.println("Area Total del Prisma: " + String.format("%.2f",areaPrisma(A_base, Pb, h)));
     }
 }

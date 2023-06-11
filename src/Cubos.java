@@ -28,4 +28,8 @@ public class Cubos {
         System.out.println(Math.pow(this.lado, 3));
         return 0;
     }
+    public void imprimirValores() {
+        System.out.println("Volumen del Cubo " + String.format("%.2f",cubo()));
+        System.out.println("Area Total del Cubo: " + String.format("%.2f",cubo(this.lado)));
+    }
 }
