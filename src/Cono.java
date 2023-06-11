@@ -110,13 +110,9 @@ public class Cono {
     }
 
     public void imprimirValores() {
-        System.out.println("\n\nRadio del Cono: " + Radio_Cono);
-        System.out.println("Altura del Cono: " + Altura_Cono);
-        System.out.println("Volumen del Cono: " + Volumen_Cono);
-        System.out.println("Generatriz: " + Generatriz);
-        System.out.println("Area Lateral del Cono: " + Area_Cono_Lateral);
-        System.out.println("Area Base del Cono: " + Area_Cono_Base);
-        System.out.println("Area Total del Cono: " + Area_Cono_Total);
+        System.out.println("Volumen del Cono: " + String.format("%.2f",Volumen_Cono));
+        System.out.println("Area Base del Cono: " + String.format("%.2f",Area_Cono_Base));
+        System.out.println("Area Total del Cono: " + String.format("%.2f",Area_Cono_Total));
     }
 //********************************************************************************************************************//
 }
